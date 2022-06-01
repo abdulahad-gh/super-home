@@ -1,21 +1,23 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
     const menuItems = <>
         {/* <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li> */}
-        <li><NavLink className='rounded-lg' to='/single-rooms'>Single</NavLink></li>
-        <li><NavLink className='rounded-lg' to='/double-rooms'>Double</NavLink> </li>
-        <li><NavLink className='rounded-lg' to='/vip-rooms'>Vip</NavLink> </li>
-        <li><NavLink className='rounded-lg' to='/contact'>Contact</NavLink> </li>
+        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/single-rooms'>Single</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/double-rooms'>Double</NavLink> </li>
+        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/vip-rooms'>Vip</NavLink> </li>
+        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/contact'>Contact</NavLink> </li>
     </>
+
+
     return (
         <div class="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content flex flex-col">
 
-                <div class="w-full navbar bg-base-300 px-20">
-                    <div class="flex-1 px-2 mx-2">Navbar Title</div>
+                <div class="w-full navbar bg-[#d5e8f5] px-20 justify-between">
+                    <Link to='/' class=" px-2 mx-2 text-2xl">Super Home</Link>
 
                     <div class="flex-none lg:hidden">
                         <label for="my-drawer-3" class="btn btn-square btn-ghost">

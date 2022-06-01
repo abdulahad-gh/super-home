@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4YA1tTajz6ruUzoAZG2TBH5-1A7VYrakdA&usqp=CAU",
+        "room": "single",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dhaka"
+    },
+    {
+        "id": 2,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4YA1tTajz6ruUzoAZG2TBH5-1A7VYrakdA&usqp=CAU",
+        "room": "single",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dhaka"
+    },
+    {
+        "id": 3,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp4YA1tTajz6ruUzoAZG2TBH5-1A7VYrakdA&usqp=CAU",
+        "room": "single",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dhaka"
+    },
+    {
+        "id": 4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLxS8giQ5WktqccKIf18YnRnXdUScusmHaQ&usqp=CAU",
+        "room": "single",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dhaka"
+    },
+    {
+        "id": 5,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0UioCyre3c4AGjG5SGUnuVlztnu73yfBLQ&usqp=CAU",
+        "room": "double",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "chittagong"
+    },
+    {
+        "id": 6,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0UioCyre3c4AGjG5SGUnuVlztnu73yfBLQ&usqp=CAU",
+        "room": "double",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "chittagong"
+    },
+    {
+        "id": 7,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0UioCyre3c4AGjG5SGUnuVlztnu73yfBLQ&usqp=CAU",
+        "room": "double",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "chittagong"
+    },
+    {
+        "id": 8,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0UioCyre3c4AGjG5SGUnuVlztnu73yfBLQ&usqp=CAU",
+        "room": "double",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "chittagong"
+    },
+    {
+        "id": 9,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMUkX78pZ8c0uVgfoIAgK_G4ukihxvuX2oQ&usqp=CAU",
+        "room": "vip",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dubai"
+    },
+    {
+        "id": 10,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMUkX78pZ8c0uVgfoIAgK_G4ukihxvuX2oQ&usqp=CAU",
+        "room": "vip",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dubai"
+    },
+    {
+        "id": 11,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMUkX78pZ8c0uVgfoIAgK_G4ukihxvuX2oQ&usqp=CAU",
+        "room": "vip",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dubai"
+    },
+    {
+        "id": 12,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMUkX78pZ8c0uVgfoIAgK_G4ukihxvuX2oQ&usqp=CAU",
+        "room": "vip",
+        "desc": "orem Ipsum is simply dummy text of the printing and typesetting industry. Lore",
+        "price": "2000",
+        "location": "dubai"
+    }
+]
