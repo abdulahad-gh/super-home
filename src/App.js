@@ -1,8 +1,11 @@
 import Navbar from './pages/shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { publicRoutes } from './routes/publicRoutes';
+import { ToastContainer } from 'react-toastify';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css'; // aos css 
+import 'react-toastify/dist/ReactToastify.css'; //react toastify css
+
 import { useEffect } from 'react';
 
 function App() {
@@ -20,6 +23,7 @@ function App() {
 
 
       </Routes>
+      <ToastContainer />
     </Navbar>
 
   );

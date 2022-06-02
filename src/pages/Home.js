@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Booking from './process/Booking';
+
+
 
 const Home = () => {
     const [rooms, setRooms] = useState([]);
     const [order, setOrder] = useState({});
+
     useEffect(() => {
         fetch('room-data.json')
             .then(res => res.json())
@@ -22,13 +26,14 @@ const Home = () => {
             <div className='mt-6'>
                 <div>
                     <div>
-                        <div className='grid grid-cols-4  gap-3  px-5'>
+                        <div className='grid grid-cols-4  gap-4  px-5'>
                             {
-                                rooms.map(room => <div class=" shadow-2xl  rounded-md flex  items-center bg-white">
+                                rooms.map(room => <div class="tooltip  shadow-2xl  rounded-md flex  items-center bg-white" data-tip={room.desc}>
                                     <img width={160} className='rounded-tl-md rounded-bl-md	' src={room.img} alt="Shoes" />
                                     <div class="px-1">
                                         <h2 class="bg-cyan-600 text-center text-white rounded-md" >
                                             {room.room}</h2>
+                                        <p>{room.price}</p>
                                         <p>{room.location}</p>
                                         <label onClick={() => handleBooking(room.id)} for="booking-modal" class="btn btn-xs modal-button px-1">Book Now</label>
 
@@ -46,17 +51,9 @@ const Home = () => {
                     <img width={300} src="https://i.ibb.co/pXmphRX/images-removebg-preview.png" alt="" />
                 </div>
             </div>
-            <input type="checkbox" id="booking-modal" class="modal-toggle" />
-            <div class="modal">
-                <div class="modal-box">
-                    <h3 class="font-bold text-lg">your room</h3>
-                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                    <div class="modal-action justify-center">
-                        <label for="booking-modal" class="btn">Yay!</label>
-                        <label for="booking-modal" class="btn">Yay!</label>
-                    </div>
-                </div>
-            </div>
+            {
+                order?.id && <Booking order={order} setOrder={setOrder} />
+            }
 
         </div>
     );
