@@ -5,6 +5,7 @@ import VipRoom from "../pages/VipRoom";
 import Contact from "../pages/Contact";
 import MyBookings from "../pages/process/MyBookings";
 import AddRoom from "../pages/Admin/AddRoom";
+import Signup from "../Auth/Signup";
 
 
 
@@ -16,4 +17,5 @@ export const publicRoutes = [
     { path: '/contact', name: 'contact', Component: Contact },
     { path: '/my-bookings', name: 'my-bookings', Component: MyBookings },
     { path: '/add-room', name: 'add-room', Component: AddRoom },
+    { path: '/signup', name: 'signup', Component: Signup },
 ]
