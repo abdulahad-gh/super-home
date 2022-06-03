@@ -4,7 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = ({ children }) => {
     const menuItems = <>
         {/* <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li> */}
-        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/single-rooms'>Single</NavLink></li>
+        <Link to='/my-bookings'><i class="fa-solid fa-hotel text-2xl"></i></Link>
+        <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : ' rounded-lg bg-black text-white opacity-70'} to='/single-rooms'>Single</NavLink></li>
         <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/double-rooms'>Double</NavLink> </li>
         <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/vip-rooms'>Vip</NavLink> </li>
         <li><NavLink className={({ isActive }) => isActive ? 'rounded-lg bg-black text-white' : 'rounded-lg bg-black text-white opacity-70'} to='/contact'>Contact</NavLink> </li>

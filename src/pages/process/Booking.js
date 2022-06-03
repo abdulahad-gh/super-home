@@ -3,14 +3,22 @@ import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import auth from "../../firebase-init";
+
+
 const Booking = ({ order, setOrder }) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
 
     const { room, price } = order;
     const [finalPrice, setFinalPrice] = useState({ day: '', totalPrice: '' })
     const [date, setDate] = useState(new Date());
+
+
+
 
 
     const formattedDate = format(date, 'PP')
@@ -20,13 +28,14 @@ const Booking = ({ order, setOrder }) => {
     }, [dayUser, price])
 
 
+
     const handleDateSelect = select => {
         setDate(select)
         console.log(select);
     }
     const onSubmit = data => {
         const formInfo = { ...data, date: date } // added clender value
-        const { name, email, phone, day, date: arrivalDate } = formInfo;
+        const { name, email, phone, day } = formInfo;
         const bookingInfo = {
             room,
             name,
@@ -37,7 +46,7 @@ const Booking = ({ order, setOrder }) => {
             price,
             finalPrice: finalPrice.totalPrice
         }
-        console.log(bookingInfo)
+
         fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
